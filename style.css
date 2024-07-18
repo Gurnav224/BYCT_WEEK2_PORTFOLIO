@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+/* navbar  */
+
+nav {
+    display: flex;
+    justify-content: right;
+    padding: 3vh 2vh;
+    background-color: #020617;
+    position: sticky;
+    top: 0%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: #f8fafc;
+    transition: color ease-in 0.3s;
+    text-decoration: underline;
+    text-decoration-color: #cbd5e1;
+}
+
+/* intro */
+
+
+#intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#intro div {
+    width: 50%;
+    background-color:#020617;
+    height: 100%;
+    color: #cbd5e1;
+    height: 102.7vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#intro h1 {
+    font-size: 5rem;
+}
+#intro h3 {
+    font-size: 2.5rem;
+}
+
+.btn-link {
+    background-color: #f8fafc;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #020617;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-link:hover{
+    border: 1px solid #f8fafc;
+    background-color: transparent;
+    color: #f8fafc;
+}
+
+#intro  img {
+    width: 50%;
+}
+
+/* About me */
+
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #1f2937;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height:80vh;
+    color: white;
+}
+
+#about .about__me__text , .about__me__text h2{
+    width: 50%;
+}
+
+#about .about__me__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#about .about__me__text p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0 8%;
+    letter-spacing: 1.3px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about__me__buttons a {
+    margin: 0 10px;
+}
+
+/* education */
+#education {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#334155;
+    padding: 3% 5%;
+}
+section  h2 {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 3rem;
+    color: #f8fafc;
+}
+
+.education__details{
+    display: flex;
+    background-color: #1f2937;
+    width: 50%;
+    height: 50vh;
+}
+
+.graduation , .inter__school{
+    background-color:#1f2937 ;
+    padding: 3% 5%;
+    color: white;
+    width: 50%;
+    line-height: 2;
+    border: 2px solid #020617;
+    letter-spacing: 1.4px;
+}
+
+
+.graduation p , .inter__school p{
+    color: gray;
+}
+
+
+/* skills  */
+
+#skills {
+    padding: 20px;
+    text-align: center;
+    background-color:#1f2937;
+}
+#skills__img__grid {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#skills__img__grid img {
+    max-width: 200px;
+    height: 200px;
+    background-color: #020617;
+    padding: 3% 5%;
+    border: 2px solid #334155;
+    border-radius: 20px;
+}
+#skills__img__grid img:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+/* experience */
+
+#experience {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #020617;
+    padding: 3% 5%;
+    color: #f8fafc;
+}
+#experience h2 {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 3rem;
+}
+.experience__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+.experience__details div {
+    background-color: #334155;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.experience__details div p {
+    color: gray;
+    margin: 5px 0;
+}
+.experience__details div h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.experience__details div h4 {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+
+/* projects */
+
+#projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #334155;
+    padding: 3% 5%;
+    color: #f8fafc;
+}
+
+#projects h2 {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 3rem;
+}
+
+.project__details {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project {
+    background-color: #1f2937;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 3% 5%;
+    margin: 10% 5%;
+}
+
+.project p {
+    color: gray;
+    margin: 15px 0;
+}
+
+.project h3 {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.project-links  {
+    margin: 10% 0;
+    color: red;
+}
+
+.project-links a {
+    font-size: 1.2rem;
+}
+
+
+/* contact  me */
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #334155;
+    padding: 3% 5%;
+    color: #f8fafc;
+}
+
+#contact h2 {
+    text-align: center;
+    margin: 3% 0;
+    font-size: 3rem;
+}
+
+.contact__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2%;
+}
+
+.contact__info,
+.social__links {
+    width: 45%;
+}
+
+.contact__info h3,
+.social__links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact__info p,
+.social__links ul {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: gray;
+}
+
+.contact__info p a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+.contact__info p a:hover {
+    text-decoration: underline;
+}
+
+.social__links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.social__links li {
+    margin-bottom: 10px;
+}
+
+.social__links a {
+    color: #4f46e5;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social__links a:hover {
+    text-decoration: underline;
+    color: #f8fafc;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
